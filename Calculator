@@ -1,0 +1,60 @@
+/*
+This project will collect and echo back the first and last name of the user.
+It will also ask the user to input two integers and will add them.
+Programmed on: 01-16-2019
+Programmed by: Teddy Ludwig
+*/
+
+package calculate.sum;
+import java.util.Scanner;
+public class CalculateSum {
+
+    public static void main(String[] args) {
+        // Step 1: Declare all of the variables that will be used in the project
+        //Variables that will be used will include firstName lastName numberOne numberTwo sum fullName
+        String firstName;
+        String lastName;
+        String fullName;
+        int numberOne;
+        int numberTwo;
+        int sum;
+        
+        //Step 1.5: Create an object for the Scanner class
+        Scanner input = new Scanner (System.in);
+        
+        //Leaving blank lines and indents is a good idea
+        //Step 2: Prompt the user to enter their first name 
+        System.out.print("Enter your First Name please: ");
+        
+        // Step 3: Read user's input for firstName
+        firstName = input.nextLine();
+        //Step 4: Print user's firstname
+        System.out.println("Your first name is: " + firstName);
+        //Step 5: Promt the user to enter their last name
+        System.out.print("Enter your last name please: ");
+        //Step 6: Read the user's lastname
+        lastName= input.nextLine();
+        //Step 7:Echo the user's last name back
+        System.out.println("Your last name is: " + lastName);
+        //Step 8: Prompt the user to enter the first number
+        System.out.print("Enter a number please: ");
+        //Step 9: Read the user's number
+        numberOne = input.nextInt();
+        //Step 10: Echo the number back
+        System.out.println("The number you chose is: " + numberOne);
+        //Step 11: Prompt the user to enter a second number
+        System.out.print("Please enter a second number: ");
+        //Step 12: Read the user's number
+        numberTwo = input.nextInt();
+        //Step 13: Echo the number back
+        System.out.println("The second number you chose is: " + numberTwo);
+        //Step 14: Fill the "fullName" variable by combining the first and last name variables (I will also add a string with just a space in it)
+        fullName = firstName + " " + lastName;
+        System.out.println("I will now add your two numbers," + fullName);
+        //Step 15: Calculate the sum of the two numbers
+        sum = numberOne + numberTwo;
+        //Step 16: Read the Sum to the user
+        System.out.println("The sum of the two numbers you chose " + fullName + ", is: " + sum);
+    }
+    
+}
